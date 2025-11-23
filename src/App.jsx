@@ -1,5 +1,6 @@
 import { SignedIn, SignedOut, SignIn, SignUp, UserButton } from '@clerk/clerk-react';
 import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
+import "./App.css"
 
 export default function App() {
   return (
@@ -7,9 +8,7 @@ export default function App() {
       <header>
         <SignedOut>
           <nav>
-            <Link to="/">Home</Link>
-            <Link to="/sign-in">Sign In</Link>
-            <Link to="/sign-up">Sign Up</Link>
+            <Link to="/sign-in"><button>Dashboard</button></Link>
           </nav>
         </SignedOut>
         <SignedIn>
@@ -24,8 +23,11 @@ export default function App() {
         {/* Public home page */}
         <Route path="/" element={
           <SignedOut>
-            <h1>Welcome to Flashcard App!</h1>
-            <p>Sign in to get started</p>
+            <div>
+                <h1> Make Studying Fun and Simple</h1>
+                <p> Quizzy makes it easy for students to learn efficiently and not procrastinate. </p>
+                <Link to="/sign-up"><button>Sign Up</button></Link>
+            </div>
           </SignedOut>
         } />
 
