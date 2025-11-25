@@ -28,6 +28,7 @@ export default function App() {
                 <h1> Make Studying Fun and Simple</h1>
                 <p> Quizzy makes it easy for students to learn efficiently and not procrastinate. </p>
                 <Link to="/sign-up"><button>Sign Up</button></Link>
+
             </div>
           </SignedOut>
         } />
@@ -40,7 +41,7 @@ export default function App() {
         <Route path="/dashboard" element={
           <SignedIn>
             <h1>Your Flashcards</h1>
-            <p>Dashboard content goes here</p>
+              <p>Click here to add new flashcards!</p>
           </SignedIn>
         } />
       </Routes>
