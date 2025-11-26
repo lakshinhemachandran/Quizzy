@@ -1,7 +1,3 @@
-![Alt text](cropped_circle_image.png)
+Quizzy is shutting down development as of 11/26/2025 due to issues with development. Quizzy will continue development in approximately one year.
 
-<h1 style="text-align: center">Quizzy</h1>
-
-Quizzy is a app that helps you study exams in a simple and easy way. 
-
-Created by Starry Systems
+- Starry Systems Team
