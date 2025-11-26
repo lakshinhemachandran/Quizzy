@@ -28,7 +28,7 @@ export default function App() {
               <div>
                 <h1> Make Studying Fun and Simple</h1>
                 <p> Quizzy makes it easy for students to learn efficiently and not procrastinate. </p>
-                <Link to="/sign-up"><button>Sign up to start the learning journey!</button></Link>
+                <Link to="/sign-up"><button className="sign-up-button-main">Sign up to start the learning journey!</button></Link>
               </div>
             </SignedOut>
           } />

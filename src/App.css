@@ -80,7 +80,7 @@ header {
     gap: 1rem;
 }
 
-/* main content area centered within remaining viewport */
+
 .main-content {
     width: 100%;
     display: flex;
@@ -88,8 +88,23 @@ header {
     justify-content: center;
     padding: 1rem;
     box-sizing: border-box;
-    flex: 1;
+
 }
 
-/* (body reset is already handled at the top with the universal selector) */
+.sign-up-button-main {
+    background-color: #66C3FF;
+    border: 1px solid #DCE1E9;
+    color: black;
+    padding: 20px 60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 20px 2px;
+    border-radius: 50px;
+    font-weight: bold;
+}
 
+.sign-up-button-main:hover {
+    background-color: #53D8FB;
+    cursor: pointer
+}
