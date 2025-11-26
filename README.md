@@ -4,4 +4,4 @@
 
 Quizzy is a app that helps you study exams in a simple and easy way. 
 
-Created by Andy Park and Lakshin Hemachandran.
+Created by Starry Systems
