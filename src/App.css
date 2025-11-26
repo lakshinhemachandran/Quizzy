@@ -6,13 +6,29 @@
   box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
+:root{
+    --header-height: 80px;
+}
+
 body {
     background-color: #363732;
-    color : #53D8FB;
+    color: #53D8FB;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 42px;
     font-display: block;
+
+    /* layout: header at top, content below */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: var(--header-height);
 }
 
 p {
@@ -30,3 +46,50 @@ button {
     font-size: 16px;
     margin: 4px 2px;
 }
+
+button:hover {
+    background-color: #53D8FB;
+    cursor: pointer;
+}
+
+.auth-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: calc(100vh - 80px); 
+    box-sizing: border-box;
+}
+
+.auth-center .clerk-sign-in, .auth-center .clerk-sign-up {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* fixed header at top center */
+header {
+    position: fixed;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(var(--header-height) - 16px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    gap: 1rem;
+}
+
+/* main content area centered within remaining viewport */
+.main-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+/* (body reset is already handled at the top with the universal selector) */
+
